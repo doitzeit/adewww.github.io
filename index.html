@@ -11,6 +11,14 @@
   />  
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- fonts begin -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> <!-- font-family: 'Pacifico', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet"> <!-- font-family: 'Zen Kurenaido', sans-serif; -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> <!-- font-family: 'Dancing Script', cursive; -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet"> <!-- font-family: 'Cinzel', serif; -->
+  <!-- fonts end -->
      <title>adem - ma links</title>
      <style>
        body{
@@ -25,13 +33,27 @@
        .love{
            color: #343a40 !important;
        }
-       #avatar { border-radius: 20%; }
+       .btn-outline-dark:hover {
+         background-color: #eefff7;
+         color: black;
+       }
+       #avatar { border-radius: 20%; border: 1px solid #343a40; }
+       #textTitle { font-family: 'Pacifico', serif; }
+       #textDescription { font-family: 'Dancing Script', cursive; font-size: 31px; }
+       #textQuote { font-family: 'Cinzel', serif; }
+       .footer { font-family: 'Dancing Script', cursive; }
        .hrefButton {
          width: 50%;
          height: 100px;
          margin: 0 auto;
          line-height: 80px;
+         font-family: 'Zen Kurenaido', sans-serif;
        }
+       .hrefButton-watchgraf {
+         background-color: #0d0d0d;
+         color: white;
+       }
+       .hrefButton-watchgraf:hover { background-color: #0d0d0d; color: white; }
        /*----------------- Mail-------------------- */
        #email{
            text-decoration: none;
@@ -62,21 +84,40 @@
   <div class="media mt-5">
     <img src="https://avatars.githubusercontent.com/u/47426121?v=4" class="m-3" alt="image" width="75px" height="75px" id="avatar">
     <div class="media-body m-2">
-      <h5 class="align-items-center mt-2">adem</h5>
-      <p>wtf am i supposed to write here ?</p>
+      <h5 class="align-items-center mt-2" id="textTitle">A.</h5>
+      <p id="textDescription">wtf am I supposed to write here ? &#129421;</p>
     </div>
   </div>
+
+  <div class="media mt-3">
+    <div class="media-body m-2">
+      <h3 class="text-center" id="textQuote">"Mom found the poop sock." &#128557;</h3> <i class="em em-cry" aria-role="presentation" aria-label="CRYING FACE"></i>
+    </div>
+  </div>
+
 <div class="mt-4">
   <a href="https://twitter.com/teargasinmyeyes" class="btn btn-outline-dark btn-block hrefButton" role="button" target="_blank"><i class="fab fa-twitter">&nbsp;</i>twitter</a>
   <br>
   <a href="https://instagram.com/pieceofbrokenglass" class="btn btn-outline-dark btn-block hrefButton" role="button" target="_blank"><i class="fab fa-instagram">&nbsp;</i>instagram</a>
   <br>
   <a href="https://github.com/somespaghetticode" class="btn btn-outline-dark btn-block hrefButton" role="button" target="_blank"><i class="fab fa-github">&nbsp;</i>github</a>
+  <!--
+  <br>
+  <a href="#" class="btn btn-outline-dark btn-block hrefButton" role="button" target="_blank"><i class="fab fa-tumblr">&nbsp;</i>tumblr</a>
+  -->
+  <br>
+  <a href="https://vsco.co/cursedandflawless" class="btn btn-outline-dark btn-block hrefButton" role="button" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/VSCO_Seal.svg/480px-VSCO_Seal.svg.png" height="20px">&nbsp;vsco</a>
+  <br>
+  <a style="cursor: pointer;" onclick="i_got_you_bitch();" class="btn btn-outline-dark btn-block hrefButton" role="button" target="_blank"><img src="https://seeklogo.com/images/O/onlyfans-logo-9F11807B1A-seeklogo.com.png" height="20px">&nbsp;onlyfans</a>
+  <!--
+  <br>
+  <a href="https://anilademyener.pythonanywhere.com/" class="btn btn-outline-dark-disabled btn-block hrefButton hrefButton-watchgraf" role="button" target="_blank"><img src="https://anilademyener.pythonanywhere.com/static/icon/apple-touch-icon-144x144.png" height="40px">&nbsp;watchgraf</a>
+  -->
 </div>
         <!--------------------Footer---------------------------->
   <div class="footer mt-5">
     <hr/>
-    <h6>have you seen joe ?</h6>
+    <h6>have you seen joe ? &#129300;</h6>
     <h6>
       hosted by <span class="love">♥</span>
       <a href="https://github.com/" class="name" target="_blank">github</a>
@@ -84,6 +125,35 @@
     </h6>
   </div>
 </div>
+  <script>
+    function get_random_of_list(list) {
+      return list[Math.floor((Math.random()*list.length))];
+    }
+
+    function i_got_you_bitch(){
+      let wisdom_array = [
+        'BIG BROTHER IS WATCHING YOU!',
+        'Be with Christ!',
+        'Start with Jesus, stay with Jesus, end with Jesus.',
+        'Shame on you!',
+        'Allah ıslak etsin.',
+        'Allah ıslahat etsin.',
+        'Müslüman adamın ne işi olur OnlyFans ile?',
+        'https://www.muslimmarriageguide.com/sexual-perversion-in-islam/',
+        'The Prophet (sallallahu alaihi wasallam)said: “A man should not lie with another man and a woman should not lie with another woman without covering their private parts except a child or a father.” (Abu Dawood)',
+        'And Allah says (interpretation of the meaning): “Nay, Allah never commands Fahshaa’ (evil deeds, unlawful sexual intercourse). Do you say of Allah what you know not?” [al-A’raaf 7:28]',
+        '“Do you approach the males of humanity, leaving the wives Allah has created for you? But you are a people who transgress” (Quran 26:165-66).',
+        'Lût’a gelince o, kavmine demişti ki: “Siz, kesinlikle daha önce hiçbir milletten hiç kimsenin yapmadığı bir hayâsızlığı yapıyorsunuz.”',
+        'وَلُوطاً اِذْ قَالَ لِقَوْمِهٖٓ اِنَّكُمْ لَتَأْتُونَ الْفَاحِشَةَؗ مَا سَبَقَكُمْ بِهَا مِنْ اَحَدٍ مِنَ الْعَالَمٖينَ ﴿٢٨﴾',
+        'اَئِنَّكُمْ لَتَأْتُونَ الرِّجَالَ وَتَقْطَعُونَ السَّبٖيلَ وَتَأْتُونَ فٖي نَادٖيكُمُ الْمُنْكَرَؕ فَمَا كَانَ جَوَابَ قَوْمِهٖٓ اِلَّٓا اَنْ قَالُوا ائْتِنَا بِعَذَابِ اللّٰهِ اِنْ كُنْتَ مِنَ الصَّادِقٖينَ ﴿٢٩﴾',
+        'وَلَمَّٓا اَنْ جَٓاءَتْ رُسُلُنَا لُـوطاً سٖٓيءَ بِهِمْ وَضَـاقَ بِهِمْ ذَرْعاً وَقَالُوا لَا تَخَفْ وَلَا تَحْزَنْࣞ اِنَّا مُنَجُّوكَ وَاَهْلَكَ اِلَّا امْرَاَتَكَ كَانَتْ مِنَ الْغَابِرٖينَ ﴿٣٣﴾',
+        'Lût, “Şu ahlâkı bozan topluluğa karşı bana yardım et rabbim!” diye dua etti.',
+        '“Biz, yoldan çıkmalarının cezası olarak bu memleket halkının üzerine gökten alçaltıcı bir belâ indireceğiz!”',
+        '"Do not lie with a man as one lies with a woman; that is detestable" (Leviticus 18:22) and "If a man lies with a man as one lies with woman, both of them have done what is detestable. They must be put to death; their blood will be on their own heads" (Leviticus 20:13).',
+      ];
+      alert(get_random_of_list(list=wisdom_array));
+    };
+  </script>
 </body>
   
 </html>
